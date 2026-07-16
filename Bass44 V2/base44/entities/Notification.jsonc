@@ -1,0 +1,35 @@
+{
+  "name": "Notification",
+  "type": "object",
+  "properties": {
+    "user_profile_id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "match",
+        "like",
+        "approval",
+        "rejection"
+      ]
+    },
+    "message_bn": {
+      "type": "string"
+    },
+    "message_en": {
+      "type": "string"
+    },
+    "read": {
+      "type": "boolean",
+      "default": false
+    },
+    "related_profile_id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "user_profile_id",
+    "type"
+  ]
+}

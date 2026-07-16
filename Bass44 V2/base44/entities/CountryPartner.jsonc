@@ -1,0 +1,54 @@
+{
+  "name": "CountryPartner",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Partner name"
+    },
+    "photo_url": {
+      "type": "string",
+      "description": "Partner photo URL"
+    },
+    "country": {
+      "type": "string",
+      "enum": [
+        "USA",
+        "Canada",
+        "UK",
+        "Australia",
+        "Italy",
+        "Malaysia",
+        "Saudi Arabia",
+        "UAE",
+        "Other"
+      ],
+      "description": "Country name"
+    },
+    "flag_emoji": {
+      "type": "string",
+      "description": "Country flag emoji"
+    },
+    "whatsapp_number": {
+      "type": "string",
+      "description": "WhatsApp contact number"
+    },
+    "available_time": {
+      "type": "string",
+      "description": "Available time / timezone info"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "inactive"
+      ],
+      "default": "active"
+    }
+  },
+  "required": [
+    "name",
+    "country",
+    "whatsapp_number"
+  ]
+}

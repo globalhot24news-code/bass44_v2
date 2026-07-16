@@ -1,0 +1,30 @@
+{
+  "name": "Like",
+  "type": "object",
+  "properties": {
+    "from_profile_id": {
+      "type": "string",
+      "description": "Profile ID of the user who sent the like"
+    },
+    "to_profile_id": {
+      "type": "string",
+      "description": "Profile ID of the user who received the like"
+    },
+    "from_profile_name": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "accepted",
+        "rejected"
+      ],
+      "default": "pending"
+    }
+  },
+  "required": [
+    "from_profile_id",
+    "to_profile_id"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "Advertisement",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Advertisement title"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "Advertisement image URL"
+    },
+    "link_url": {
+      "type": "string",
+      "description": "Website or contact link"
+    },
+    "description": {
+      "type": "string",
+      "description": "Short description"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "inactive"
+      ],
+      "default": "active"
+    }
+  },
+  "required": [
+    "title"
+  ]
+}

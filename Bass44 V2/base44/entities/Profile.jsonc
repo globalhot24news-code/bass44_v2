@@ -1,0 +1,127 @@
+{
+  "name": "Profile",
+  "type": "object",
+  "properties": {
+    "name_bangla": {
+      "type": "string",
+      "description": "Full name in Bangla"
+    },
+    "name_english": {
+      "type": "string",
+      "description": "Full name in English"
+    },
+    "mobile": {
+      "type": "string",
+      "description": "Mobile number (hidden from public)"
+    },
+    "email": {
+      "type": "string",
+      "description": "Email address"
+    },
+    "full_address": {
+      "type": "string",
+      "description": "Full address (hidden from public)"
+    },
+    "division": {
+      "type": "string",
+      "enum": [
+        "Dhaka",
+        "Chittagong",
+        "Rajshahi",
+        "Khulna",
+        "Barisal",
+        "Sylhet",
+        "Rangpur",
+        "Mymensingh"
+      ]
+    },
+    "district": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "string",
+      "enum": [
+        "male",
+        "female"
+      ]
+    },
+    "age": {
+      "type": "number"
+    },
+    "occupation": {
+      "type": "string"
+    },
+    "religion": {
+      "type": "string",
+      "enum": [
+        "Islam",
+        "Hindu",
+        "Christian",
+        "Buddhist",
+        "Other"
+      ]
+    },
+    "marital_status": {
+      "type": "string",
+      "enum": [
+        "never_married",
+        "divorced",
+        "widowed"
+      ]
+    },
+    "height": {
+      "type": "string",
+      "description": "Height in Bengali"
+    },
+    "blood_group": {
+      "type": "string",
+      "enum": [
+        "A+",
+        "A-",
+        "B+",
+        "B-",
+        "AB+",
+        "AB-",
+        "O+",
+        "O-"
+      ]
+    },
+    "bio": {
+      "type": "string",
+      "description": "Short bio, max 300 chars"
+    },
+    "photo_url": {
+      "type": "string",
+      "description": "Profile photo URL"
+    },
+    "membership": {
+      "type": "string",
+      "enum": [
+        "free",
+        "premium"
+      ],
+      "default": "free"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "approved",
+        "rejected"
+      ],
+      "default": "pending"
+    },
+    "rejection_reason": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "name_bangla",
+    "name_english",
+    "gender",
+    "age",
+    "religion",
+    "marital_status",
+    "district"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Match",
+  "type": "object",
+  "properties": {
+    "profile_a_id": {
+      "type": "string"
+    },
+    "profile_b_id": {
+      "type": "string"
+    },
+    "profile_a_name": {
+      "type": "string"
+    },
+    "profile_b_name": {
+      "type": "string"
+    },
+    "notified": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "profile_a_id",
+    "profile_b_id"
+  ]
+}
